@@ -25,26 +25,26 @@ function Contact() {
         <div className="flex justify-center gap-6 flex-wrap">
 
           <a
-            href="mailto:yourmail@gmail.com"
-            className="flex items-center gap-3 px-6 py-4 rounded-xl bg-slate-800 border border-slate-700 hover:border-sky-400 transition"
+            href="mailto:ishaabhaandari@gmail.com"
+            className="flex items-center gap-3 px-6 py-4 rounded-xl bg-slate-800 border border-slate-700 hover:border-sky-400 transition duration-300 hover:scale-105"
           >
             <FaEnvelope />
             Email
           </a>
 
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/ish182"
             target="_blank"
-            className="flex items-center gap-3 px-6 py-4 rounded-xl bg-slate-800 border border-slate-700 hover:border-sky-400 transition"
+            className="flex items-center gap-3 px-6 py-4 rounded-xl bg-slate-800 border border-slate-700 hover:border-sky-400 transition duration-300 hover:scale-105"
           >
             <FaGithub />
             GitHub
           </a>
 
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/isha-bhandari-b473b732a/"
             target="_blank"
-            className="flex items-center gap-3 px-6 py-4 rounded-xl bg-slate-800 border border-slate-700 hover:border-sky-400 transition"
+            className="flex items-center gap-3 px-6 py-4 rounded-xl bg-slate-800 border border-slate-700 hover:border-sky-400 transition duration-300 hover:scale-105"
           >
             <FaLinkedin />
             LinkedIn

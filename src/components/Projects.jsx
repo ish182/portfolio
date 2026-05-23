@@ -15,7 +15,7 @@ const projects = [
       "Authentication",
     ],
 
-    github: "https://github.com/yourusername/cloud-storage",
+    github: "https://github.com/ish182/secure-cloud-storage",
 
     live: "#",
   },
@@ -27,23 +27,22 @@ const projects = [
       "Built a responsive e-commerce platform with authentication, product management, and shopping cart functionality.",
 
     tech: [
-      "React",
+      "Java",
+      "Spring Boot",
       "JavaScript",
       "CSS",
       "API",
     ],
 
-    github: "https://github.com/yourusername/ecommerce",
+    github: "https://github.com/ish182/Ecommerce",
 
     live: "#",
   },
 
   {
-    title: "Student Management System",
+   title: "Event Management System",
 
-    description:
-      "Created a management system for maintaining student records with CRUD operations and database integration.",
-
+   description: "Developed an event management system to organize events, manage registrations, track attendees, and handle event scheduling with database integration.",
     tech: [
       "Java",
       "MySQL",
@@ -51,7 +50,7 @@ const projects = [
       "Database",
     ],
 
-    github: "https://github.com/yourusername/student-management",
+    github: "https://github.com/ish182/EventManagement",
 
     live: "#",
   },
