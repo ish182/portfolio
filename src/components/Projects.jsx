@@ -1,4 +1,6 @@
+import { useState } from "react"
 import ProjectCard from "./ProjectCard"
+import ProjectModal from "./ProjectModal"
 
 const projects = [
   {
@@ -17,7 +19,22 @@ const projects = [
 
     github: "https://github.com/ish182/secure-cloud-storage",
 
-    live: "#",
+   overview:
+  "Developed a secure cloud-based storage system using Java Spring Boot and MySQL with Role-Based Access Control (RBAC), authentication, and chunk-based file sharing.",
+
+features: [
+  "Role-Based Access Control (RBAC)",
+  "JWT Authentication",
+  "Chunk-based File Storage",
+  "Secure File Sharing",
+  "Database Integration",
+],
+
+challenges:
+  "Implemented secure role-based permissions while designing an efficient chunk-based storage mechanism for large file handling.",
+
+learned:
+  "Strengthened my knowledge of backend architecture, REST APIs, authentication, authorization, and scalable database design.",
   },
 
   {
@@ -36,7 +53,22 @@ const projects = [
 
     github: "https://github.com/ish182/Ecommerce",
 
-    live: "#",
+    overview:
+  "Developed a full-stack e-commerce web application using Java Spring Boot and MySQL. The application enables users to browse products, manage shopping carts, authenticate securely, and place orders through a responsive interface.",
+
+features: [
+  "User Authentication",
+  "Product Catalog Management",
+  "Shopping Cart Functionality",
+  "REST API Integration",
+  "Responsive User Interface",
+],
+
+challenges:
+  "Designed a secure authentication system while integrating backend APIs with the frontend to provide a smooth shopping experience.",
+
+learned:
+  "Improved my understanding of full-stack development, REST API integration, backend business logic, database management, and responsive web design.",
   },
 
   {
@@ -52,11 +84,27 @@ const projects = [
 
     github: "https://github.com/ish182/EventManagement",
 
-    live: "#",
+    overview:
+  "Built an event management system using Java and MySQL to streamline event scheduling, participant registration, attendee management, and event record maintenance through an organized database-driven application.",
+
+features: [
+  "Event Scheduling",
+  "Participant Registration",
+  "CRUD Operations",
+  "Database Integration",
+  "Attendee Management",
+],
+
+challenges:
+  "Designed an efficient database structure to manage event information while implementing reliable CRUD operations for smooth data management.",
+
+learned:
+  "Enhanced my knowledge of database design, CRUD operations, Java application development, and building structured management systems.",
   },
 ]
 
 function Projects() {
+  const [selectedProject, setSelectedProject] = useState(null)
   return (
     <section
       id="projects"
@@ -78,14 +126,18 @@ function Projects() {
               description={project.description}
               tech={project.tech}
               github={project.github}
-              live={project.live}
+              project={project}
+              onOpen={setSelectedProject}
             />
           ))}
 
         </div>
 
       </div>
-
+      <ProjectModal
+        project={selectedProject}
+        onClose={() => setSelectedProject(null)}
+      />
     </section>
   )
 }
