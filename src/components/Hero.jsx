@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import resume from "../assets/resume.pdf"
 
 function Hero() {
   return (
@@ -31,14 +32,14 @@ function Hero() {
           <div className="flex gap-4">
             <a
               href="#projects"
-              className="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-600 transition"
+              className="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-600 transition duration-300 hover:scale-105"
             >
               View Projects
             </a>
 
             <a
-              href="/resume.pdf"
-              className="px-6 py-3 rounded-xl border border-slate-600 hover:border-sky-400 transition"
+              href={resume}
+              className="px-6 py-3 rounded-xl border border-slate-600 hover:border-sky-400 transition duration-300 hover:scale-105"
             >
               Resume
             </a>

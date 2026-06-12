@@ -13,7 +13,7 @@ function ProjectCard({
     <motion.div
       whileHover={{ y: -10 }}
       transition={{ duration: 0.3 }}
-      className="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden hover:border-sky-400 transition"
+      className="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden hover:border-sky-400 transition duration-300 hover:scale-[1.02]"
     >
 
       <div className="h-52 bg-gradient-to-r from-sky-500/20 to-violet-500/20"></div>

@@ -10,10 +10,10 @@ function Navbar() {
         </h1>
 
         <ul className="hidden md:flex gap-8 text-sm font-medium">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" className="hover:text-sky-400 transition">About</a></li>
+          <li><a href="#skills" className="hover:text-sky-400 transition">Skills</a></li>
+          <li><a href="#projects" className="hover:text-sky-400 transition">Projects</a></li>
+          <li><a href="#contact" className="hover:text-sky-400 transition">Contact</a></li>
         </ul>
 
         <FaBars className="md:hidden text-2xl" />
